@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@mipmap/background2">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/welcome"
+        android:layout_marginTop="100dp"
+        android:id="@+id/image"
+        android:layout_above="@+id/app_welcome_text">
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/app_welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/lavendar_border"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Welcome to our App !"
+        android:textColor="@color/my_maroon"
+        android:textSize="24dp"
+        android:textStyle="bold"></TextView>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/signup_to_page"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/app_welcome_text">
+    </Button>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/login_to_page"
+        android:backgroundTint="@color/blue"
+        android:layout_below="@+id/signup_to_page"
+        android:layout_marginTop="20dp">
+    </Button>
+
+
+</RelativeLayout>
